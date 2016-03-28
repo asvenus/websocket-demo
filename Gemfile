@@ -1,10 +1,8 @@
 source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
-
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
-
+# Use mysql as the database for Active Record
+gem 'mysql2', '~> 0.3.18'
 # Use SCSS for stylesheets
 gem 'sass-rails'
 
@@ -31,21 +29,10 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
 
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
 gem 'twitter-bootstrap-rails'
 gem 'haml-rails'
 gem 'websocket-rails', github: 'moaa/websocket-rails', branch: 'threadsocket-rails'
 gem 'websocket-rails-js', github: 'websocket-rails/websocket-rails-js', branch: 'sub_protocols'
 gem 'devise'
-gem 'pg'
 
